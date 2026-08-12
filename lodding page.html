@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>National Parks</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #loading{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading-content{
+            text-align: center;
+        }
+
+        .loading-content img{
+            width: 160px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .loading-content h2{
+            color: #212529;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .loading-content p{
+            color: #777;
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        .loading-bar{
+            width: 200px;
+            height: 4px;
+            background: #e5e5e5;
+            margin: 25px auto 0;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .loading-bar span{
+            display: block;
+            width: 60px;
+            height: 100%;
+            background: #198754;
+            border-radius: 10px;
+            animation: loading 1.2s infinite ease-in-out;
+        }
+
+        @keyframes loading{
+
+            0%{
+                transform: translateX(-60px);
+            }
+
+            100%{
+                transform: translateX(200px);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Loading Page -->
+
+    <div id="loading">
+
+        <div class="loading-content">
+
+            <img src="images/logo.png" alt="National Parks">
+
+            <h2>National Parks</h2>
+
+            <p>Loading...</p>
+
+            <div class="loading-bar">
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- YAHAN SE TUMHARI ACTUAL WEBSITE START HOGI -->
+
+    <header>
+
+        <!-- Tumhara existing navbar yahan -->
+
+    </header>
+
+
+    <!-- Tumhari baaki website -->
+
+
+
+    <!-- JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+        .loading{
+            width: 100%;
+            height: 100vh;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content{
+            text-align: center;
+        }
+
+        .content img{
+            width: 160px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .content h1{
+            font-size: 32px;
+            color: #212529;
+            margin-top: 10px;
+        }
+
+        .content p{
+            color: #777;
+            margin-top: 8px;
+        }
+
+        .loader{
+            width: 200px;
+            height: 4px;
+            background: #ddd;
+            margin: 25px auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .loader span{
+            display: block;
+            width: 60px;
+            height: 100%;
+            background: #198754;
+            animation: loading 1.2s infinite;
+        }
+
+        @keyframes loading{
+
+            0%{
+                transform: translateX(-60px);
+            }
+
+            100%{
+                transform: translateX(200px);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loading">
+
+        <div class="content">
+
+            <img src="images/logo.png" alt="National Parks">
+
+            <h1>National Parks</h1>
+
+            <p>Loading...</p>
+
+            <div class="loader">
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        window.addEventListener("load", function(){
+
+            setTimeout(function(){
+
+                window.location.href = "index.html";
+
+            }, 1500);
+
+        });
+
+    </script>
+
+</body>
+</html>
+</body>
+</html>
