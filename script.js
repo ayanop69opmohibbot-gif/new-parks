@@ -402,3 +402,16 @@ if (categoryParks) {
 }
 
     // category section end
+
+
+
+  window.addEventListener("scroll",function(){
+    const vertical=window.scrollY;
+    const top=document.getElementById("top");
+
+    if(vertical>=1200){
+        top.style.display="flex";
+    }else{
+        top.style.display="none";
+    }
+});
